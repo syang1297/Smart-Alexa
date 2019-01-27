@@ -5,8 +5,6 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.lang.reflect.Array;
-
 public class URLRequest {
 
     String URLBase = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name&inputtype=textquery&key=AIzaSyCcU99VGRKJIUxf0UD3lYhYQHLlmJpj0lg";

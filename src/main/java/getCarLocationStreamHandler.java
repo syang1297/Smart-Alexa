@@ -31,8 +31,9 @@
 //                        new FallbackIntentHandler())
 //                // Add your skill id below
 //                //.withSkillId("")
+//                    .withSkillId("amzn1.ask.skill.8dc627d4-1c70-4c6e-b56d-39524afb6e20");
 //                .build();
-//                .withSkillId("amzn1.ask.skill.8dc627d4-1c70-4c6e-b56d-39524afb6e20");
+//
 //    }
 //
 //    class carObj {

@@ -11,13 +11,12 @@
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
-import com.smartcar.sdk.Vehicle;
+import com.sun.tools.sjavac.server.RequestHandler;
+//import Smart-Alexa.src.main.java.*;
 
 import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.intentName;
-
-//import Smart-Alexa.src.main.java.*;
 
 public class getCarLocationHandler implements RequestHandler {
 
@@ -29,9 +28,9 @@ public class getCarLocationHandler implements RequestHandler {
     @Override
     public Optional<Response> handle(HandlerInput input) {
         CarInformation car = new CarInformation();
-        Vehicle veh = car.createCarInstance();
-        String speechText = "Your car's coordinates are" + car.getCarCoordinates(veh);
-       return input.getResponseBuilder()
+
+        String speechText = car.oilChange();
+        return input.getResponseBuilder()
                 .withSpeech(speechText)
                 .build();
     }
